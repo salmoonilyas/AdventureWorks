@@ -4,7 +4,7 @@
 
 The business request for project was creating an dashboard for sales manager and providing the overview of sales, overview of customers and over view of products sales. The overview is to be provided for the past three years and allowing the user to modify the filters wrt years and months.
 The Dashboard should have the KPI and line charts along with the top ten sales for the products and for the customers.
-An table(Piviot/Matix) is also requied sorted by top total sales, having all the sales data wrt. customer and product. Region in which sales are made would also be nice to have.
+An table(Pivot/Matrix) is also required sorted by top total sales, having all the sales data wrt. customer and product. Region in which sales are made would also be nice to have.
 
 ## Sales Management Project on AdventureWorks databases
 
@@ -14,7 +14,7 @@ Note that AdventureWorks has not seen any significant changes since the 2012 ver
 
 Data Source:<https://github.com/microsoft/sql-server-samples/tree/master/samples/databases/adventure-works>
 
-As the calender and database is relitively old so to update the dates of database the script [Update_AdventureWorksDW_Data.sql](../AdventureWorks/sql_queries/Update_AdventureWorksDW_Data.sql) is used. This script do not modify any other data and only shift the dates by adding the years wrt current year and also adds the dates in theDIM_Dates table which is basically an calender table.
+As the calender and database is relatively old so to update the dates of database the script [Update_AdventureWorksDW_Data.sql](../AdventureWorks/sql_queries/Update_AdventureWorksDW_Data.sql) is used. This script do not modify any other data and only shift the dates by adding the years wrt current year and also adds the dates in theDIM_Dates table which is basically an calender table.
 
 Note: The Microsoft AdventureWorks databases/data being used is under MIT license.
 
@@ -111,7 +111,7 @@ order by
 -- SQL Script for cleaning DIM_Products and left join it with DIM_ProductCategory and DIM_ProductSubCategory
 SELECT
     [ProductKey],
-    [ProductAlternateKey] AS [ProdcuctItemCode],
+    [ProductAlternateKey] AS [ProductItemCode],
     --[ProductSubcategoryKey],
     --[WeightUnitMeasureCode],
     --[SizeUnitMeasureCode],
@@ -136,7 +136,7 @@ SELECT
     --[Style],
     [ModelName] AS [ProductModel],
     --[LargePhoto],
-    [EnglishDescription] AS [ProdcuctDescription],
+    [EnglishDescription] AS [ProductDescription],
     --[FrenchDescription],
     --[ChineseDescription],
     --[ArabicDescription],
@@ -207,7 +207,7 @@ Below is Model view of the dat after importing it into Power BI.
 
 ## Sales Management Dashboards
 
-The three created sales manangent dashboards are shown below.
+The three created sales management dashboards are shown below.
 
 ### Sales overview dashboard
 
@@ -221,6 +221,6 @@ The three created sales manangent dashboards are shown below.
 
 ![product_details](/dashboards/product_details.png "Product details Dashboard")
 
-[Click here Download to view it in PowerBI](/sales_report.pbix "Open in PowerBI").
+[Click here to download the PowerBI file](/sales_report.pbix "Open in PowerBI").
 
 ---

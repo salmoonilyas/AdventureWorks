@@ -1,7 +1,7 @@
 -- SQL Script for cleaning DIM_Products and left join it with DIM_ProductCategory and DIM_ProductSubCategory
 SELECT 
     [ProductKey],
-    [ProductAlternateKey] AS [ProdcuctItemCode],
+    [ProductAlternateKey] AS [ProductItemCode],
     --[ProductSubcategoryKey],
     --[WeightUnitMeasureCode],
     --[SizeUnitMeasureCode],
@@ -26,7 +26,7 @@ SELECT
     --[Style],
     [ModelName] AS [ProductModel],
     --[LargePhoto],
-    [EnglishDescription] AS [ProdcuctDescription],
+    [EnglishDescription] AS [ProductDescription],
     --[FrenchDescription],
     --[ChineseDescription],
     --[ArabicDescription],
